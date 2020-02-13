@@ -96,8 +96,8 @@ The 2 models used are random forest and SVM
 
 | Model         | Kaggle Score |
 | ------------- | ------------ |
-| Random Forest | 0.78         |
-| SVM           | 0.75         |
+| Random Forest | 0.75095      |
+| SVM           | 0.70675      |
 
 ### Cost Benefit Analysis
 
