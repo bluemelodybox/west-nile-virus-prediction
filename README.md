@@ -84,7 +84,7 @@ Latitude   Longitude  Count
 41.743402  -87.731435  11
 ```
 
-- Created a new feature called Dist_0 and Dist_1 fromt train and test data which are the distance away from the location of highest WnvPresent using harvesine function
+- Created a new feature called Dist_0 and Dist_1 from train and test data which are the distance away from the location of highest WnvPresent using harvesine function
 
 - Added features like rolling mean of different periods for temperature, dewpoint and precipitation
 
@@ -105,9 +105,9 @@ There are 4 recommendation options.
 
 |        | Option 1                                                                           | Option 2                                                                                   | Option 3                                                                                      | Option 4                                                                                                     |
 |--------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| **Method** | Spray all Wnv Positive Areas                                                       | Spray based on community areas                                                             | Spray based on distance from 3 key points                                                     | Release genetically modified mosquitos                                                                       |
-| **Pros**   | Wnv positive mosquito can be dramatically reduced, thereby reducing Wnv human case | Reduce Wnv positive mosquitos in area of high risk while saving cost of spraying           | Cost\-effective method that only target high risk Wnv positive area based on train datasets   | Long term solution that can address future moquito problems, which are bound to worsen due to global warming |
-| **Cons**   | Spraying all positive Wnv areas can be very costly                                 | Singular traps with only 1 Wnv positive mosquito will be missed out despite potential risk | Assume that most Wnv positive mosquitos came from these 3 areas while missing out other areas | Require a significant R&D investment cost & time to implement                                                |
+| **Method** | Spray all Wnv Positive Areas                                                       | Spray based on community areas                                                             | Spray based on distance from 2 key points                                                    | Release genetically modified mosquitos                                                                       |
+| **Pros**   | Wnv positive mosquito can be dramatically reduced, thereby reducing Wnv human case | Reduce Wnv positive mosquitos in area of high risk while saving cost of spraying           | Cost\-effective method that only target high risk Wnv positive area based on train datasets   | Long term solution that can address future mosquito problems, which are bound to worsen due to global warming |
+| **Cons**   | Spraying all positive Wnv areas can be very costly                                 | Singular traps with only 1 Wnv positive mosquito will be missed out despite potential risk | Assume that most Wnv positive mosquitos came from these 2 areas while missing out other areas | Require a significant R&D investment cost & time to implement                                                |
 
 
 ### Conclusion
@@ -124,4 +124,4 @@ More information would be required to make the model more accurate at predicting
 
 3) More spray area data other than 2011 and 2013
 
-Nevertheless, we conclude that our random forest classificaion model has performed up to expectation in predicting Wnv presence in Chicago. 
+Nevertheless, we conclude that our random forest classification model has performed up to expectation in predicting Wnv presence in Chicago. 
