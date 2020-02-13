@@ -101,7 +101,7 @@ The 2 models used are random forest and SVM
 
 ### Cost Benefit Analysis
 
-There are 4 recommendation options.
+There are 4 recommendation options, with each cost calculated assuming scenario where each option is chosen as spraying strategy in 2013. 
 
 |        | Option 1                                                                           | Option 2                                                                                   | Option 3                                                                                      | Option 4                                                                                                     |
 |--------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
