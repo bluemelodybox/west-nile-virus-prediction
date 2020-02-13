@@ -1,8 +1,24 @@
 # Project 4: West Nile Virus Prediction
 
+### Executive Summary
+
+West Nile virus is most commonly spread to humans through infected mosquitos. Around 20% of people who become infected with the virus develop symptoms ranging from a persistent fever, to serious neurological illnesses that can result in death. 
+
+In 2002, the first human cases of West Nile virus were reported in Chicago. By 2004 the City of Chicago and the Chicago Department of Public Health (CDPH) had established a comprehensive surveillance and control program that is still in effect today. 
+
+Surveillance activities includes:
+
+- Finding and monitoring places where adult mosquitoes lay eggs. The larvae that hatch from eggs are found in these same places.
+- Tracking mosquito populations and the viruses they may be carrying 
+- Determining if EPA-registered insecticides will be effective 
+
+Every week from late spring through the fall, mosquitos in traps across the city are tested for the virus. The results of these tests influence when and where the city will spray airborne pesticides based on the model prediction to control adult mosquito populations.
+
 ### Problem Statement
 
-The intent of this project is to analyze weather data and train data to predicting the presence of the West Nile virus, for a given time, location, and species. In addition, a cost benefit analysis is done to give recommendations on where and when to spray to reduce the most amount of mosquito with the least cost. 
+The intent of this project is to analyze weather data and train data to build a model to predict the presence of the West Nile virus, for a given time, location, and species. The  output from the WNV algorithm is a score indicating the risk that a specific site could test positive for WNV in an upcoming week. 
+
+In addition, a cost benefit analysis is done to give recommendations on where and when to spray to reduce the most amount of mosquito with the least cost. 
 
 ### General approach
 
@@ -24,7 +40,31 @@ The intent of this project is to analyze weather data and train data to predicti
 - Assign mosquito species to just 4 categories with the last category as others
 - Remove duplicated train data
 
-### Data Analysis and Merging
+### Data Analysis 
+
+The train datasets has data for the year 2007, 2009, 2011, 2013. The trend graph over the month shows the no of traps which tested virus presence as positive in red line , whereas the no of traps which test virus absence in blue line. 
+
+![Trend-of-virus-presence](/Users/wesley/Dev/dsi12_proj4/graphs/Trend-of-virus-presence.png)
+
+
+
+The no of traps employed in the August-2007 is in peak. The below bar chart shows the employ of no of traps over the year.
+
+![Number-of-traps-over-year](/Users/wesley/Dev/dsi12_proj4/graphs/Number-of-traps-over-year.png)
+
+
+
+The Species is also  have significance with the virus presence. Mostly the species PIPIENS has the significance in the virus presence. This feature can be included in the model
+
+![Species-virus-present-bar-graph](/Users/wesley/Dev/dsi12_proj4/graphs/Species-virus-present-bar-graph.png)
+
+The Spray area covered is very less, so this spray data can be considered for the cost benefit analysis and is not used for the model prediction. The spray data over the year is as below.
+
+![Spray-graph-2011-2013](/Users/wesley/Dev/dsi12_proj4/graphs/Spray-graph-2011-2013.png)
+
+
+
+### Data Merging
 
 - Merged weather to train and test data based on closest station and date
 
@@ -36,12 +76,12 @@ The intent of this project is to analyze weather data and train data to predicti
 
 ```
 Coordinates with highest WnvPresent: 
-Latitude   Longitude Count
-41.974689  -87.890615    29
-41.673408  -87.599862    15
-41.954690  -87.800991    15
-41.964242  -87.757639    14
-41.743402  -87.731435    11
+Latitude   Longitude  Count
+41.974689  -87.890615  29
+41.673408  -87.599862  15
+41.954690  -87.800991  15
+41.964242  -87.757639  14
+41.743402  -87.731435  11
 ```
 
 - Created a new feature called Dist_0 and Dist_1 fromt train and test data which are the distance away from the location of highest WnvPresent using harvesine function
