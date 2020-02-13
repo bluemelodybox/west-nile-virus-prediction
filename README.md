@@ -60,7 +60,7 @@ The Species is also  have significance with the virus presence. Mostly the speci
 
 The Spray area covered is very less, so this spray data can be considered for the cost benefit analysis and is not used for the model prediction. The spray data over the year is as below.
 
-![Spray-graph-2011-2013](/Users/wesley/Dev/dsi12_proj4/graphs/Spray-graph-2011-2013.png)
+![Spray-graph-2011-2013](/graphs/Spray-graph-2011-2013.png)
 
 
 
