@@ -36,7 +36,7 @@ The intent of this project is to analyze weather data and train data to predicti
 
 ```
 Coordinates with highest WnvPresent: 
-Latitude   Longitude 		Count
+Latitude   Longitude Count
 41.974689  -87.890615    29
 41.673408  -87.599862    15
 41.954690  -87.800991    15
@@ -45,7 +45,10 @@ Latitude   Longitude 		Count
 ```
 
 - Created a new feature called Dist_0 and Dist_1 fromt train and test data which are the distance away from the location of highest WnvPresent using harvesine function
+
 - Added features like rolling mean of different periods for temperature, dewpoint and precipitation
+
+  
 
 ### Modelling and Validation
 
@@ -53,8 +56,8 @@ The 2 models used are random forest and SVM
 
 | Model         | Kaggle Score |
 | ------------- | ------------ |
-| Random Forest | 0.75         |
-| SVM           | 0.7          |
+| Random Forest | 0.78         |
+| SVM           | 0.75         |
 
 ### Cost Benefit Analysis
 
@@ -68,4 +71,4 @@ There are 3 recommendation options.
 
 ### Conclusion
 
-From our analysis we recommend spraying on all if we have the budget
+From our analysis we recommend spraying on all only if we have the budget
