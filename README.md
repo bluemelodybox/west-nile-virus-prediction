@@ -44,19 +44,19 @@ In addition, a cost benefit analysis is done to give recommendations on where an
 
 The train datasets has data for the year 2007, 2009, 2011, 2013. The trend graph over the month shows the no of traps which tested virus presence as positive in red line , whereas the no of traps which test virus absence in blue line. 
 
-![Trend-of-virus-presence](/Users/wesley/Dev/dsi12_proj4/graphs/Trend-of-virus-presence.png)
+![Trend-of-virus-presence](/graphs/Trend-of-virus-presence.png)
 
 
 
 The no of traps employed in the August-2007 is in peak. The below bar chart shows the employ of no of traps over the year.
 
-![Number-of-traps-over-year](/Users/wesley/Dev/dsi12_proj4/graphs/Number-of-traps-over-year.png)
+![Number-of-traps-over-year](/graphs/Number-of-traps-over-year.png)
 
 
 
 The Species is also  have significance with the virus presence. Mostly the species PIPIENS has the significance in the virus presence. This feature can be included in the model
 
-![Species-virus-present-bar-graph](/Users/wesley/Dev/dsi12_proj4/graphs/Species-virus-present-bar-graph.png)
+![Species-virus-present-bar-graph](/graphs/Species-virus-present-bar-graph.png)
 
 The Spray area covered is very less, so this spray data can be considered for the cost benefit analysis and is not used for the model prediction. The spray data over the year is as below.
 
